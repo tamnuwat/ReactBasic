@@ -21,7 +21,7 @@ class Blink extends Component {
     }
 
     return (
-      <Text>{this.props.text}</Text>
+      <Text style={styles.bigBlue}>{this.props.text}</Text>
     );
   }
 }
@@ -36,3 +36,11 @@ export default class App extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  bigBlue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+});
